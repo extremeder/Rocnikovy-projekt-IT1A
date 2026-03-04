@@ -1,94 +1,58 @@
-/* Základní nastavení */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #0d1117; /* Velmi tmavá modrá */
-    color: #c9d1d9;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
     margin: 0;
-    line-height: 1.6;
+    text-align: center;
 }
 
-/* Hlavička */
 header {
-    background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
-    padding: 60px 20px;
-    text-align: center;
-    border-bottom: 2px solid #58a6ff;
+    padding: 40px;
+    background: #0f172a;
+    border-bottom: 4px solid #007bff;
 }
 
-header h1 {
-    color: #58a6ff;
-    font-size: 3rem;
-    margin: 0;
-    letter-spacing: 4px;
-    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
-}
-
-.tagline {
-    font-style: italic;
-    color: #8b949e;
-}
-
-/* Hlavní obsah */
-main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-section {
-    margin-bottom: 50px;
-    padding: 20px;
-    background: #161b22;
-    border-radius: 8px;
-    border: 1px solid #30363d;
-}
-
-h2 {
-    color: #79c0ff;
-    border-left: 4px solid #58a6ff;
-    padding-left: 15px;
-}
-
-/* Seznam a Tým */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin: 10px 0;
-    padding-left: 20px;
-    position: relative;
-}
-
-li::before {
-    content: ">";
-    position: absolute;
-    left: 0;
-    color: #58a6ff;
-    font-weight: bold;
-}
-
-.team-grid {
+/* Nastavení těch tří boxů vedle sebe */
+.grid-container {
     display: flex;
-    gap: 20px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.member {
-    background: #21262d;
-    padding: 15px;
-    border-radius: 6px;
-    text-align: center;
-    min-width: 150px;
-    border: 1px solid #30363d;
-}
-
-/* Patička */
-footer {
-    text-align: center;
+    justify-content: center;
+    gap: 10px;
     padding: 20px;
-    font-size: 0.8rem;
-    color: #8b949e;
+}
+
+.box {
+    background-color: #0056b3; /* Ta modrá z tvého obrázku, ale trochu hezčí */
+    padding: 20px;
+    flex: 1; /* Aby byly všechny stejně široké */
+    min-height: 200px;
+    border: 2px solid #007bff;
+}
+
+/* Velká sekce Novinky */
+.news-section {
+    background-color: #cccccc;
+    color: black;
+    margin: 10px 20px;
+    padding: 40px;
+    min-height: 150px;
+}
+
+/* Patička s týmem */
+.team-footer {
+    background-color: #0f172a;
+    margin-top: 20px;
+    padding: 30px;
+    border-top: 4px solid #007bff;
+}
+
+.emails {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Rozdělí emaily do dvou sloupců */
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h3, h2 {
+    margin-top: 0;
 }
