@@ -1,0 +1,94 @@
+/* Základní nastavení */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0d1117; /* Velmi tmavá modrá */
+    color: #c9d1d9;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Hlavička */
+header {
+    background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #58a6ff;
+}
+
+header h1 {
+    color: #58a6ff;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+.tagline {
+    font-style: italic;
+    color: #8b949e;
+}
+
+/* Hlavní obsah */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #161b22;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+h2 {
+    color: #79c0ff;
+    border-left: 4px solid #58a6ff;
+    padding-left: 15px;
+}
+
+/* Seznam a Tým */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+.team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    background: #21262d;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 150px;
+    border: 1px solid #30363d;
+}
+
+/* Patička */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #8b949e;
+}
