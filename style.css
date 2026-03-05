@@ -12,7 +12,6 @@ header {
     border-bottom: 4px solid #007bff;
 }
 
-/* Nastavení těch tří boxů vedle sebe */
 .grid-container {
     display: flex;
     justify-content: center;
@@ -21,14 +20,13 @@ header {
 }
 
 .box {
-    background-color: #0056b3; /* Ta modrá z tvého obrázku, ale trochu hezčí */
+    background-color: #0056b3;
     padding: 20px;
-    flex: 1; /* Aby byly všechny stejně široké */
+    flex: 1; 
     min-height: 200px;
     border: 2px solid #007bff;
 }
 
-/* Velká sekce Novinky */
 .news-section {
     background-color: #cccccc;
     color: black;
@@ -37,7 +35,6 @@ header {
     min-height: 150px;
 }
 
-/* Patička s týmem */
 .team-footer {
     background-color: #0f172a;
     margin-top: 20px;
@@ -47,7 +44,7 @@ header {
 
 .emails {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Rozdělí emaily do dvou sloupců */
+    grid-template-columns: 1fr 1fr; 
     gap: 10px;
     max-width: 500px;
     margin: 0 auto;
