@@ -20,7 +20,7 @@ header {
 }
 
 .box {
-    background-color: #0056b3;
+    background-color: #0056b3; 
     padding: 20px;
     flex: 1; 
     min-height: 200px;
